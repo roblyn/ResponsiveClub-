@@ -1,0 +1,211 @@
+body {
+  font-family: "Taviraj", serif;
+}
+#app {
+  width: 90%;
+  margin: auto;
+}
+.header {
+  background-color: hsla(200, 4%, 17%, 0.4);
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  flex: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.logo img {
+  max-width: 10%;
+}
+
+.navbar {
+  list-style-type: none;
+  flex: 50%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.navbar li {
+  display: inline-block;
+  padding: 20px 10px;
+}
+.navbar a {
+  color: #d9d945;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.grid {
+  display: grid;
+  width: auto;
+  max-height: 3000px;
+  margin: auto;
+  grid-template: repeat(20, 1fr) / repeat(12, 1fr);
+  gap: 30px 15px;
+}
+
+.description {
+  grid-area: 1 / 1 / 6 / 13;
+  overflow: hidden;
+}
+.description img {
+  min-width: 100%;
+}
+
+.description-text {
+  background-color: white;
+  opacity: 0.7;
+  grid-area: 1 / 6 / 4 / 13;
+  padding: 1%;
+  font-size: 1.3em;
+  line-height: 30px;
+  font-weight: 500;
+}
+.events {
+  overflow: hidden;
+  grid-area: 6 / 1 / 10 / 7;
+  object-fit: cover;
+}
+.event-title {
+  grid-area: 9 / 1 / 10 / 7;
+  background-color: #d9d945;
+  opacity: 0.8;
+  padding: 4%;
+  font-size: 2em;
+  line-height: 30px;
+  font-weight: 500;
+}
+.size img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.medlem {
+  grid-area: 10 / 1 / 14 / 7;
+  overflow: hidden;
+}
+.medlem-title {
+  grid-area: 13 / 1 / 14 / 7;
+  background-color: #d9d945;
+  opacity: 0.8;
+  padding: 4%;
+  font-size: 2em;
+  line-height: 30px;
+  font-weight: 500;
+}
+.gallery {
+  grid-area: 6 / 7 / 14 / 13;
+  overflow: hidden;
+}
+.about {
+  grid-area: 14 / 1 / 18 / 7;
+  overflow: hidden;
+  background-color: teal;
+  color: white;
+  padding: 30px;
+  line-height: 2em;
+}
+.gallery-image1 {
+  grid-area: 14 / 7 / 16 / 10;
+  overflow: hidden;
+}
+.gallery-image2 {
+  grid-area: 14 / 10 / 16/ 13;
+  overflow: hidden;
+}
+.gallery-image3 {
+  grid-area: 16/ 7 / 18 / 10;
+  overflow: hidden;
+}
+.gallery-image4 {
+  grid-area: 16 / 10 / 18/ 13;
+  overflow: hidden;
+}
+.kontakt {
+  grid-area: 18 / 7 / 23 / 10;
+}
+.kontakt-info {
+  grid-area: 18 / 10 / 23 / 13;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor {
+  grid-area: 18 / 1 / 23 / 7;
+  overflow: hidden;
+}
+.sponsor img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: hsla(200, 4%, 17%, 0.9);
+  width: 100%;
+  height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  #app {
+    width: 100%;
+  }
+  .grid {
+    max-height: 8000px;
+    grid-template: repeat(50, 1fr) / repeat(1, 1fr);
+   
+  }
+  .description {
+    grid-area:  4 / 1 / 10 / 20;
+  }
+  .description-text {
+    grid-area: 1 / 1 / 4 / 20;  
+    overflow:scroll;  
+  }
+  .events{
+    grid-area: 10 / 1 / 14 / 20;  
+  }
+  .event-title{
+    grid-area: 13 / 1 / 14 / 20;
+  }
+  .medlem{
+    grid-area: 14 / 1 / 18 / 20; 
+  }
+  .medlem-title{
+    grid-area: 17 / 1 / 18 / 20; 
+  }
+  .gallery{
+    grid-area: 18 / 1 / 22 / 20; 
+  }
+  .about{
+    grid-area: 22 / 1 / 26 / 20; 
+  }
+  .gallery-image1{
+    grid-area: 26 / 1 / 30 / 20; 
+  }
+  .gallery-image2{
+    grid-area: 30 / 1 / 34 / 20; 
+  }
+  .gallery-image3{
+    grid-area: 34 / 1 / 38 / 20; 
+  }
+  .gallery-image4{
+    grid-area: 38 / 1 / 42 / 20; 
+  }
+  .kontakt{
+    grid-area: 42 / 1 / 46 / 6; 
+  }
+  .kontakt-info{
+    grid-area: 42 / 6 / 46 / 20;
+    
+  }
+  .sponsor{
+      grid-area: 46 / 1 / 50 / 20;
+  }
+}
