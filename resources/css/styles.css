@@ -42,6 +42,9 @@ body {
   font-weight: 800;
   font-size: 1.2em;
 }
+.mobile{
+    display: none;
+}
 
 .grid {
   display: grid;
@@ -161,12 +164,32 @@ footer {
     grid-template: repeat(50, 1fr) / repeat(1, 1fr);
    
   }
+  .header{
+      position: fixed;
+      width: 100%;
+      height: 100px;
+  }
+  .mobile{
+    list-style-type: none;
+    flex: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  .navbar{
+      display: none;
+    
+  }
+  .logo img{
+      max-width: 20%;
+  }
   .description {
     grid-area:  4 / 1 / 10 / 20;
   }
   .description-text {
-    grid-area: 1 / 1 / 4 / 20;  
-    overflow:scroll;  
+    grid-area: 2/ 1 / 4 / 20;  
+    overflow:hidden;  
   }
   .events{
     grid-area: 10 / 1 / 14 / 20;  
