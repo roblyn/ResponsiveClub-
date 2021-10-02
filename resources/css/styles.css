@@ -179,7 +179,6 @@ footer {
   }
   .navbar{
       display: none;
-    
   }
   .logo img{
       max-width: 20%;
@@ -188,8 +187,8 @@ footer {
     grid-area:  4 / 1 / 10 / 20;
   }
   .description-text {
-    grid-area: 2/ 1 / 4 / 20;  
-    overflow:hidden;  
+    grid-area: 2/ 1 / 4 / 20; 
+    overflow: scroll;
   }
   .events{
     grid-area: 10 / 1 / 14 / 20;  
