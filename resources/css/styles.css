@@ -154,7 +154,7 @@ body {
 .sponsor {
   grid-area: 18 / 1 / 23 / 7;
   overflow: hidden;
-  background-image: url('/resources/img/logo.jpg');
+  background-image: url('../img/logo.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
